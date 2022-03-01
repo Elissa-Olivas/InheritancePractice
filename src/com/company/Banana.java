@@ -1,6 +1,6 @@
 package com.company;
 
-public class Apple extends Fruit {
+public class Banana extends Fruit {
     private String color;
     private String taste;
     private int glycemicIndexNum;
@@ -26,7 +26,7 @@ public class Apple extends Fruit {
         return glycemicIndexNum;
     }
 
-    public Apple (boolean hasFlesh, boolean hasSeeds, String color, String taste, int glycemicIndexNum) {
+    public Banana (boolean hasFlesh, boolean hasSeeds, String color, String taste, int glycemicIndexNum) {
         super(true, true);
         this.color = color;
         this.taste = taste;
@@ -34,9 +34,9 @@ public class Apple extends Fruit {
     }
 
     public void printDetails() {
-        System.out.println("An Apple is a fruit because hasSeeds is " + getHasSeeds()
-        + ". The Apple hasFlesh is " + getHasFlesh() + ". \n" +
-                "The Apple is " + color + ", " + taste  +
+        System.out.println("A Banana is a fruit because hasSeeds is " + getHasSeeds()
+                + ". The Banana hasFlesh is " + getHasFlesh() + ". \n" +
+                "The Banana is " + color + ", " + taste  +
                 ", and has a glycemic Index of " + glycemicIndexNum);
     }
 }
